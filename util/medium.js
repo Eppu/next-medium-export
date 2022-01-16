@@ -27,7 +27,5 @@ export async function getMediumData() {
 export async function getPostData(id) {
   const mediumData = await getMediumData();
   const post = mediumData.posts.find((p) => p.path === id);
-
-  console.log(post);
   return post;
 }
